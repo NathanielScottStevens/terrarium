@@ -13,6 +13,13 @@
   </form>
 </section>
 
+<div>Counter: <%= @counter %></div>
+<section class="game-map">
+    <%= for row <- @map do %>
+        <div><%= row %></div>
+    <% end %>
+</section>
+
 <section class="row">
   <article class="column">
     <h2>Resources</h2>
